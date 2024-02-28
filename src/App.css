@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI';
+  background-color: beige;
+  font-size: 14px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #082A39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  justify-content: space-between;
+  height: 90px;
+}
+.App-header img {
+  margin-left: 100px ;
+  width: 100px;
+}
+.App-header button {
+  margin-right: 100px ;
+}
+.App-header input {
+  color:gray;
+  border-radius:5px;
+  background-color:beige;
+  border:none;
+  padding:10px 15px;
+  margin-left: 950px ;
+}
+.App-header .button button {
+  background-color: beige;
+}
+.App-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 50px;
+  width: 70%;
+  flex-wrap: wrap;
+  grid-row-gap: 25px ;
+}
+.App-container .container1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+.App-container .container1 .descri p {
+  display: flex; /* Utilisez flexbox pour aligner les éléments horizontalement */
+  align-items: center; /* Centrez les éléments verticalement */
+  justify-content: center;
+  height: 20px;
+}
+aside {
+  width: 23%;
+  background-color: #082A39;
+  border-radius: 20px;
+  height: 350px;
+}
+footer {
+  background-color: #082A39;
+  color:white;
+  text-align: center;
+}
+footer .foot1{
+  display: grid;
+  font-size: 14px;
+  margin: 0 0 15px;
+  width: 100px;
+
+}
+
+footer .links {
+  display: flex;
+  align-items: center; /* Centrez les éléments verticalement */
+  justify-content: space-evenly;
+  text-align: left;
+  margin-right: 60%;
+}
+footer h5 {
+  color: #DFBEA9;
+  width: 700px;
+}
+
+.bigContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+} 
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
