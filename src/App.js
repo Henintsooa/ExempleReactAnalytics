@@ -5,6 +5,8 @@ import Item from './components/Item';
 import Aside from './components/Aside';
 import Footer from './components/Footer';
 import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
+import { initializeGoogleAnalytics } from './google-analytics';
 
 function App() {
   const initialItems = [
@@ -76,6 +78,8 @@ function App() {
   
   useEffect(() => {
     filterProducts();
+    // Initialize Google Analytics
+    initializeGoogleAnalytics();
   }, []);
   return (
     <div className="App">
@@ -122,6 +126,15 @@ function App() {
           name4="Instagram"
           />
         </footer>
+
+      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-954JMH7ZY4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-954JMH7ZY4');
+      </script> */}
       </div>      
 
   );
